@@ -27,6 +27,7 @@
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.2.0",
     "lucide-react": "^0.436.0",
+    "parcel": "^2.11.0",
     "query-builder": "file:",
     "react": "^18.3.1",
     "react-accordion": "^0.3.0",
@@ -50,7 +51,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:parcel": "parcel build src/index.tsx --public-url ./ --dist-dir dist --no-cache"
   },
   "eslintConfig": {
     "extends": [
@@ -71,6 +73,7 @@
     ]
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
     "@types/react-popover": "^0.5.8",
     "@types/uuid": "^10.0.0",
     "autoprefixer": "^10.4.20",

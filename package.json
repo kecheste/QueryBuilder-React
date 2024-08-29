@@ -52,7 +52,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:parcel": "parcel build src/index.tsx --public-url ./ --dist-dir dist --no-cache"
+    
+    "build:parcel": "parcel build src/index.tsx --public-url ./ --dist-dir dist --no-cache",
+    "start:parcel": "parcel serve src/index.tsx"
   },
   "eslintConfig": {
     "extends": [
@@ -78,6 +80,7 @@
     "@types/uuid": "^10.0.0",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
+    "process": "^0.11.10",
     "tailwindcss": "^3.4.10"
   }
 }

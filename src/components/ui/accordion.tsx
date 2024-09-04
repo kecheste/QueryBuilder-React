@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { FiChevronDown as ChevronDownIcon } from "react-icons/fi";
+import {
+  ChevronDownIcon
+} from "@radix-ui/react-icons"
 import { cn } from "../../utils/utils"
 
 const Accordion = AccordionPrimitive.Root

@@ -1,6 +1,7 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 import React from "react";
-import ReactDOM, { createRoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 import { ReactFlowProvider } from "@xyflow/react";
 import "./tailwind.css";
@@ -34,6 +35,3 @@ window.bundleEntries.load = function (options) {
   options.chart.state("ok", "Chart drawn.");
   options.process.resolve();
 };
-
-
-

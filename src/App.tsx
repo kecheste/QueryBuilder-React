@@ -25,15 +25,15 @@ export default function App() {
       },
     };
 
-    // const response = await fetch("http://localhost:5000/query", {
-    //   method: "POST",
-    //   body: JSON.stringify(requestJSON),
-    //   headers: new Headers({ "content-type": "application/json" }),
-    // });
-    // const resultGraph = await response.json();
-    // if (!resultGraph?.nodes?.length) {
-    //   return alert("No matching result for the query.");
-    // }
+    const response = await fetch("http://localhost:5000/query", {
+      method: "POST",
+      body: JSON.stringify(requestJSON),
+      headers: new Headers({ "content-type": "application/json" }),
+    });
+    const resultGraph = await response.json();
+    if (!resultGraph?.nodes?.length) {
+      return alert("No matching result for the query.");
+    }
   };
 
   return (

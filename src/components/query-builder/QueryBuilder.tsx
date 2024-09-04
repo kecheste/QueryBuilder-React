@@ -162,7 +162,7 @@ export default function QueryBuilder({
     );
     return {
       ...c,
-      custom: (props) => (
+      custom: (props: any) => (
         <CustomNode {...props} viewOnly={viewOnly} onAddNode={onAddNode} />
       ),
     };
@@ -180,7 +180,7 @@ export default function QueryBuilder({
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
-        onInit={(r) => (reactFlowInstance.current = r)}
+        onInit={(r: any) => (reactFlowInstance.current = r)}
         proOptions={{ hideAttribution: true }}
         fitViewOptions={{ padding: 0.5 }}
         defaultEdgeOptions={{

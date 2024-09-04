@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Handle, Position, useReactFlow } from "@xyflow/react";
@@ -444,8 +443,8 @@ function useNodeState(id: string, data: any) {
     e.preventDefault();
     const formData = new FormData(formRef.current!);
     const values = Object.fromEntries(formData);
-    setNodes((nds) =>
-      nds.map((n) =>
+    setNodes((nds: any) =>
+      nds.map((n: any) =>
         n.id === id ? { ...n, data: { ...n.data, ...values } } : n,
       ),
     );
@@ -453,7 +452,7 @@ function useNodeState(id: string, data: any) {
   }
 
   function deleteNode() {
-    setNodes((nds) => nds.filter((n) => n.id !== id));
+    setNodes((nds: any) => nds.filter((n: any) => n.id !== id));
   }
 
   return {
